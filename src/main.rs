@@ -107,7 +107,7 @@ fn array_mult_1(a:&Vec<Vec<i32>>,b:&Vec<Vec<i32>>) -> Option<Vec<Vec<i32>>>{
     }
 }
 
-fn addition(a : &i32,b : &i32) -> i32 {
+fn addition(a : i32,b : i32) -> i32 {
     a + b
 }
 
@@ -140,6 +140,8 @@ mod matrix_tests{
 
     #[test]
     fn test_add(){
-        assert_eq!(1==1,false);
+        assert_eq!(super::addition(1,1),2);
+        assert_eq!(super::addition(2,1),3);
+        assert_eq!(super::addition(200000,12343),212343);
     }
 }
