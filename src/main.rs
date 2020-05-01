@@ -6,6 +6,9 @@ fn main() {
     let mut c:[i32;5] = [0;5];
     let mut x:usize = 0;
 
+
+    
+
     let  d = array_add(&a,&b);
 
     match d{
