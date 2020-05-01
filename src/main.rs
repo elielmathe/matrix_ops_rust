@@ -7,7 +7,7 @@ fn main() {
     let mut x:usize = 0;
 
 
-    
+
 
     let  d = array_add(&a,&b);
 
@@ -48,7 +48,7 @@ fn array_add(a:&[i32],b:&[i32]) -> Option<Vec<i32>>{
         let mut vc = Vec::new();
         let mut y:usize = 0;
         for i in a.iter(){
-            vc.push(a[y] + b[y]);
+            vc.push(a[y] - b[y]);
             y += 1;
         }
         Some(vc)
